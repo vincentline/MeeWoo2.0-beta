@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick CLI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-navbar">
+        <div class="header-left-action">
+            <div class="header-logo"></div>
+        </div>
+        <h1 class="header-navbar-title">Quick CLI</h1>
+        <div class="header-right-action">
+            <button class="theme-toggle" title="切换主题">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+                </svg>
+                <span class="tooltip-text">切换主题</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="command-container" id="commandContainer"></div>
+        </div>
+    </main>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
