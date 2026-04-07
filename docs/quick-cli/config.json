@@ -1,0 +1,79 @@
+{
+  "commands": [
+    {
+      "category": "Git",
+      "command": "git status",
+      "description": "查看 Git 仓库当前状态"
+    },
+    {
+      "category": "Git",
+      "command": "git add .",
+      "description": "暂存所有变更文件"
+    },
+    {
+      "category": "Git",
+      "command": "git commit -m \"Initial commit\"",
+      "description": "提交暂存的更改到本地仓库"
+    },
+    {
+      "category": "Git",
+      "command": "git push origin main",
+      "description": "推送本地提交到远程 main 分支"
+    },
+    {
+      "category": "npm",
+      "command": "npm install",
+      "description": "安装项目依赖包"
+    },
+    {
+      "category": "npm",
+      "command": "npm run dev",
+      "description": "启动开发服务器（热更新）"
+    },
+    {
+      "category": "npm",
+      "command": "npm run build",
+      "description": "构建生产环境版本"
+    },
+    {
+      "category": "Windows",
+      "command": "ipconfig",
+      "description": "查看本机网络配置信息"
+    },
+    {
+      "category": "Windows",
+      "command": "ping google.com",
+      "description": "测试网络连通性"
+    },
+    {
+      "category": "Windows",
+      "command": "dir",
+      "description": "列出当前目录下的文件和文件夹"
+    },
+    {
+      "category": "Linux",
+      "command": "ls -la",
+      "description": "列出目录详细信息（含隐藏文件）"
+    },
+    {
+      "category": "Linux",
+      "command": "pwd",
+      "description": "显示当前工作目录路径"
+    },
+    {
+      "category": "Linux",
+      "command": "sudo apt update",
+      "description": "更新软件包列表索引"
+    },
+    {
+      "category": "PowerShell",
+      "command": "pwsh -File scripts\\feishu_stack.ps1 start",
+      "description": "启动Supervisor服务，常驻，用于飞书机器人等"
+    },
+    {
+      "category": "PowerShell",
+      "command": "pwsh -File scripts\\feishu_stack.ps1 stop",
+      "description": "关闭Supervisor服务"
+    }
+  ]
+}

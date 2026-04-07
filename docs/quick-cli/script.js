@@ -1,29 +1,11 @@
-// 命令行配置数据（由 AI 维护，用户无需手动编辑）
-const COMMAND_CONFIG = {
-  "commands": [
-    { "category": "Figma", "command": "bunx cursor-talk-to-figma-socket" },
-    { "category": "Git", "command": "git status" },
-    { "category": "Git", "command": "git add ." },
-    { "category": "Git", "command": "git commit -m \"Initial commit\"" },
-    { "category": "Git", "command": "git push origin main" },
-    { "category": "Linux", "command": "ls -la" },
-    { "category": "Linux", "command": "pwd" },
-    { "category": "Linux", "command": "sudo apt update" },
-    { "category": "npm", "command": "npm install" },
-    { "category": "npm", "command": "npm run build" },
-    { "category": "npm", "command": "npm run dev" },
-    { "category": "npm", "command": "npm run figma" },
-    { "category": "Python", "command": "python scripts/feishu_agent_runner.py" },
-    { "category": "Python", "command": "python scripts/feishu_mcp_server.py" },
-    { "category": "Tunnel", "command": "cloudflared tunnel run feishu-ai" },
-    { "category": "Windows", "command": "dir" },
-    { "category": "Windows", "command": "ipconfig" },
-    { "category": "Windows", "command": "ping google.com" }
-  ]
-};
-
-function loadConfig() {
-  renderCommands(COMMAND_CONFIG.commands);
+async function loadConfig() {
+  try {
+    const response = await fetch('config.json');
+    const config = await response.json();
+    renderCommands(config.commands);
+  } catch (error) {
+    console.error('加载配置失败:', error);
+  }
 }
 
 function renderCommands(commands) {
@@ -60,7 +42,21 @@ function renderCommands(commands) {
     sortedCommands.forEach(cmd => {
       const buttonElement = document.createElement('button');
       buttonElement.className = 'command-button';
-      buttonElement.textContent = cmd.command;
+      
+      if (cmd.description) {
+        buttonElement.classList.add('has-description');
+        const cmdLine = document.createElement('span');
+        cmdLine.className = 'cmd-line';
+        cmdLine.textContent = cmd.command;
+        const descLine = document.createElement('span');
+        descLine.className = 'cmd-desc';
+        descLine.textContent = cmd.description;
+        buttonElement.appendChild(cmdLine);
+        buttonElement.appendChild(descLine);
+      } else {
+        buttonElement.textContent = cmd.command;
+      }
+      
       buttonElement.addEventListener('click', () => copyToClipboard(cmd.command));
       gridElement.appendChild(buttonElement);
     });
