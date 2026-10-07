@@ -1,0 +1,5 @@
+source=MeeWoo2.0
+commit=ccc7722e0d804e45e3d93408bd21f56559e18646
+branch=main
+built_at=2026-10-07T15:02:25.131Z
+subject=fix(build): 修 vue-tsc -b 在 vite/playwright 配置上的类型错，npm run build 恢复绿
