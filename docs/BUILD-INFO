@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=887031b8713efe7a9e96a07f20bb614bbb83bc99
+commit=ea21e1253faecb43f6b3a0b47eff33dbc85462a7
 branch=main
-built_at=2026-10-07T20:52:40.342Z
-subject=chore(publish): 重建站点产物 docs/（含 ws 空模块与 exec 超时两项修复）
+built_at=2026-10-07T21:30:27.414Z
+subject=chore(publish): 重建站点产物 docs/（含 YYEVA 键面板）
