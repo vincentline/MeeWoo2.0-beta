@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=ea21e1253faecb43f6b3a0b47eff33dbc85462a7
+commit=2039ba115872fe407822f15dd6f0961e8c78cc79
 branch=main
-built_at=2026-10-07T21:30:27.414Z
-subject=chore(publish): 重建站点产物 docs/（含 YYEVA 键面板）
+built_at=2026-10-08T09:14:33.222Z
+subject=fix(yyeva): 删除 frame-geometry 重构遗留的死变量 alphaX，修复 vue-tsc -b 构建失败
