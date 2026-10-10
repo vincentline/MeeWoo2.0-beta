@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=2039ba115872fe407822f15dd6f0961e8c78cc79
+commit=ad5a3309bf24ff8626717eddb5cf4cf2e10b4480
 branch=main
-built_at=2026-10-08T09:14:33.222Z
-subject=fix(yyeva): 删除 frame-geometry 重构遗留的死变量 alphaX，修复 vue-tsc -b 构建失败
+built_at=2026-10-10T04:29:31.659Z
+subject=docs(svga): 校准表回填矩阵回归（43 passed/11.6min）与 wasm 生产可达性实测
