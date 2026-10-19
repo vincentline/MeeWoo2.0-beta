@@ -1,0 +1,26 @@
+[
+  {
+    "name": "blue",
+    "svga": "assets/mingren_gift_1photo/blue.svga"
+  },
+  {
+    "name": "green",
+    "svga": "assets/mingren_gift_1photo/green.svga"
+  },
+  {
+    "name": "orange",
+    "svga": "assets/mingren_gift_1photo/orange.svga"
+  },
+  {
+    "name": "pink",
+    "svga": "assets/mingren_gift_1photo/pink.svga"
+  },
+  {
+    "name": "purple",
+    "svga": "assets/mingren_gift_1photo/purple.svga"
+  },
+  {
+    "name": "red",
+    "svga": "assets/mingren_gift_1photo/red.svga"
+  }
+]

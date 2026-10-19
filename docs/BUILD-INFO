@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=ad5a3309bf24ff8626717eddb5cf4cf2e10b4480
+commit=228ea95e787b2cdb393d49cbe3a57f5bc1ed5907
 branch=main
-built_at=2026-10-10T04:29:31.659Z
-subject=docs(svga): 校准表回填矩阵回归（43 passed/11.6min）与 wasm 生产可达性实测
+built_at=2026-10-19T02:11:51.812Z
+subject=feat(ui): 浮层位置全面板共用 + 贴边/居中，尺寸按面板记忆
