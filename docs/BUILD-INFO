@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=3b821aeda96662490102edfb4de6470a4538de2c
+commit=858e16406b28ba370c70e425740b487b009b8ce2
 branch=main
-built_at=2026-10-20T03:47:23.025Z
+built_at=2026-10-20T16:29:40.591Z
 subject=chore(build): 重新构建产物（发布 beta 前）
