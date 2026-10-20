@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=ecd505bdcb3e3024b35bf58dee26cf5b5a9ede7c
+commit=92022ee2c1376b669b796b6fdfb7c8e4402cc57f
 branch=main
-built_at=2026-10-20T16:51:33.032Z
-subject=feat(docs): 新增表单控件 UI 套件和 404 页面
+built_at=2026-10-20T19:43:43.815Z
+subject=feat(canvas): 素材右键菜单支持当前帧另存/复制与层级调整
