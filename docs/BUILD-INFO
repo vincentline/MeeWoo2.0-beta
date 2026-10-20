@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=92022ee2c1376b669b796b6fdfb7c8e4402cc57f
+commit=baab32b9804cfb2a814b8a6792a7510a37d948d5
 branch=main
-built_at=2026-10-20T19:43:43.815Z
-subject=feat(canvas): 素材右键菜单支持当前帧另存/复制与层级调整
+built_at=2026-10-20T20:00:14.755Z
+subject=fix(editor): 素材信息条文件大小改为徽标并排在内存后
