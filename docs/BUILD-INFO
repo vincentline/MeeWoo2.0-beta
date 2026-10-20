@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=228ea95e787b2cdb393d49cbe3a57f5bc1ed5907
+commit=3b821aeda96662490102edfb4de6470a4538de2c
 branch=main
-built_at=2026-10-19T02:11:51.812Z
-subject=feat(ui): 浮层位置全面板共用 + 贴边/居中，尺寸按面板记忆
+built_at=2026-10-20T03:47:23.025Z
+subject=chore(build): 重新构建产物（发布 beta 前）
