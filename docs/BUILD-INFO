@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=6cec5316c114446b9b83291c2175f1cbffcb13b4
+commit=ec15d712f894dbdb6a7af87a431e22b19534886d
 branch=main
-built_at=2026-10-21T03:10:46.894Z
-subject=docs(skill): 新增 deploy-beta 发布全流程技能
+built_at=2026-10-21T03:31:14.841Z
+subject=chore(build): 更新 docs 构建产物（版本号读 BUILD-INFO）
