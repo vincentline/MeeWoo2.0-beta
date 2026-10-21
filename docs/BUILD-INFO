@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=817de2c8727faa9a878ff23c807489b78b9c023c
+commit=d7aa9324da9dc5c835a1f7d0b02b4a206f1c4a26
 branch=main
-built_at=2026-10-21T01:58:01.334Z
-subject=chore(build): 更新 docs 构建产物（双通道判定修复）
+built_at=2026-10-21T03:02:17.813Z
+subject=chore(build): 更新 docs 构建产物（左灰度 alpha 双通道支持）
