@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=ace7fc899788632c4975226fe5e3c1bd2c17a15c
+commit=aef8d275f915bfdb10929299754993647fef85ae
 branch=main
-built_at=2026-10-21T04:03:15.758Z
-subject=chore(build): 更新 docs 构建产物（开发仓版本同步）
+built_at=2026-10-21T10:31:14.254Z
+subject=chore(build): 更新 docs 构建产物（v1.3.0.4）
