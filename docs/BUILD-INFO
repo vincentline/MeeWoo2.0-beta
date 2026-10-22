@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=e0f58ad113539fc69bec6e71302d921b8075bbfc
+commit=448f86147d87a538b71f74134659f298ee0b0f43
 branch=main
-built_at=2026-10-22T13:06:18.298Z
-subject=chore(build): 更新 docs 构建产物（v1.3.0.10，精简指令）
+built_at=2026-10-22T13:09:26.332Z
+subject=chore(build): 更新 docs 构建产物（v1.3.0.11，去掉自报身份）
