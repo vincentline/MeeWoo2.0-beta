@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=448f86147d87a538b71f74134659f298ee0b0f43
+commit=84db743f85d3987963359964775ac756ee6e3750
 branch=main
-built_at=2026-10-22T13:09:26.332Z
-subject=chore(build): 更新 docs 构建产物（v1.3.0.11，去掉自报身份）
+built_at=2026-10-22T13:24:23.620Z
+subject=chore(build): 更新 docs 与 Agent 分发包（v1.3.0.12，默认无头）
