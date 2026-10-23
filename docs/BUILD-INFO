@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=aef8d275f915bfdb10929299754993647fef85ae
+commit=ccf71bc012a176509f8450192c38d668b0a3b1c9
 branch=main
-built_at=2026-10-21T10:31:14.254Z
-subject=chore(build): 更新 docs 构建产物（v1.3.0.4）
+built_at=2026-10-23T05:41:22.523Z
+subject=chore(build): 更新 docs 构建产物（v1.3.0.14：素材面板音频/更多菜单、导出压缩开关、拖拽导入修复）
