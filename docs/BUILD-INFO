@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=e0eefadd047519b79f4b5c9e0f9f4ab2cf3b880a
+commit=e8d81d79456e1ffa622e7640c992d85425bc2d43
 branch=main
-built_at=2026-10-22T13:27:43.692Z
-subject=chore(build): 更新 docs 与 Agent 分发包（v1.3.0.13，MCP 默认无头说明）
+built_at=2026-10-23T10:23:50.615Z
+subject=chore(build): 更新 docs 构建产物（v1.3.0.15，复制/另存修复）
