@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=5431b4ce8c32648c300795e7ad146072abb0e21a
+commit=f025737d0d2e0f8c3a7e853bd95b3950540f36c0
 branch=main
-built_at=2026-10-23T19:57:53.457Z
-subject=chore(build): 更新 docs 构建产物（v1.3.0.17：双通道烘焙质量与元数据、进度条常驻）
+built_at=2026-10-25T20:52:56.464Z
+subject=chore(build): 更新 docs 构建产物（v1.3.0.18）
