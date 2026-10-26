@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=46c152d094337864d707716ae3be3bffce0acccd
+commit=2e5ec2809e5fd4d45d9b565e7d18cdf82b6ffcab
 branch=main
-built_at=2026-10-26T09:42:28.206Z
-subject=chore(build): 更新 docs 构建产物（v1.3.0.22，隐形旋转热区）
+built_at=2026-10-26T12:03:26.455Z
+subject=chore(build): 更新 docs 构建产物（v1.3.0.23，SVGA 源文件缓存）
