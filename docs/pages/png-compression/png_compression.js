@@ -670,7 +670,7 @@
         var arrayBuffer = await readFileAsArrayBuffer(image.file);
         var uint8Array = new Uint8Array(arrayBuffer);
 
-        // TinyPNG WASM 是同步阻塞的——压缩期间 JS 定时器不触发
+        // PNG 压缩 WASM 是同步阻塞的——压缩期间 JS 定时器不触发
         // 但 CSS animation（脉冲动画）仍能运行，提供视觉反馈
         var compressedData = await window.MeeWoo.Services.ImageCompressionService.compressImage(uint8Array, quality);
 

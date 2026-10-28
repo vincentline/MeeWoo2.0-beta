@@ -1,5 +1,5 @@
 /**
- * Tinypng 服务适配器
+ * PNG 有损压缩服务适配器
  * 封装 tinypng-lib 库，提供统一的压缩接口
  * 
  * 注意：使用相对路径导入，确保在静态服务器上也能正常工作
@@ -37,16 +37,16 @@ export async function compress(data, options = {}) {
             fileName: 'compressed.png'
         };
 
-        console.log('Starting TinyPNG compression with options:', compressOptions);
+        console.log('Starting PNG compression with options:', compressOptions);
 
-        // 调用 TinyPNG 压缩
+        // 调用 PNG 压缩
         const result = await TinyPNG.compress(file, compressOptions);
 
         if (!result.success) {
-            throw new Error('TinyPNG compression returned failure status');
+            throw new Error('PNG compression returned failure status');
         }
 
-        console.log('TinyPNG compression result:', {
+        console.log('PNG compression result:', {
             originalSize: result.originalSize,
             compressedSize: result.compressedSize,
             rate: result.rateString
@@ -66,13 +66,13 @@ export async function compress(data, options = {}) {
              const buffer = await result.file.arrayBuffer();
              compressedData = new Uint8Array(buffer);
         } else {
-            throw new Error('TinyPNG returned no usable output data');
+            throw new Error('PNG compression returned no usable output data');
         }
 
         return compressedData;
 
     } catch (error) {
-        console.error('TinyPNG compression error:', error);
+        console.error('PNG compression error:', error);
         throw error;
     }
 }
