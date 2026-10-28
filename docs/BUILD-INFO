@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=d26dfa6395451b599992fa5bf855e3f2157eadf0
+commit=905ccb769e7916d945f7bbcea9fb4cc0b4fadc81
 branch=main
-built_at=2026-10-28T05:23:32.285Z
-subject=chore(build): 更新 docs 构建产物（v1.3.0.27，MP4 真实帧率）
+built_at=2026-10-28T05:32:51.538Z
+subject=chore(build): 更新 docs 构建产物（v1.3.0.28，灰色格式徽标）
