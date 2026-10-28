@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=94dbd7e82e392417bee11571d716dea39877ba38
+commit=fd588704608f5da803cfa332404af7ff62ab1acb
 branch=main
-built_at=2026-10-28T05:39:30.597Z
-subject=chore(build): 更新 docs 构建产物（v1.3.0.29，选中模块灰底）
+built_at=2026-10-28T07:23:23.235Z
+subject=chore(build): 更新 docs 构建产物（v1.3.0.30）
