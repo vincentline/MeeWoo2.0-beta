@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=ac196c7c9dd79855978744bc63cf87fc78094341
+commit=8e9df94a2649d83220e209d0548681ad4d4459a9
 branch=main
-built_at=2026-11-01T12:18:34.019Z
-subject=chore(build): 更新 docs 构建产物（v1.3.0.32，视频处理 Agent 接入）
+built_at=2026-11-01T12:49:28.479Z
+subject=chore(build): 更新 docs 构建产物（v1.3.0.33，模型配置方案）
