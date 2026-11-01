@@ -1,12 +1,12 @@
 /**
- * 图片压缩服务 - 使用 TinyPNG (tinypng-lib)
+ * 图片压缩服务 - 使用本地 PNG 有损压缩库 (tinypng-lib)
  * 
  * 功能：
- * - PNG: 使用 TinyPNG (tinypng-lib-wasm) 进行有损压缩
+ * - PNG: 使用本地 PNG 有损压缩库 (tinypng-lib-wasm) 进行有损压缩
  * - JPG: 不压缩
  * 
  * 压缩策略：
- * - 首选：TinyPNG 有损压缩（支持质量参数）
+ * - 首选：PNG 有损压缩（支持质量参数）
  * - 降级：直接返回原始数据（因为图片可能已经缩小，体积已减小）
  * 
  * 注意：
@@ -33,7 +33,7 @@
         },
 
         /**
-         * 初始化 TinyPNG 模块
+         * 初始化 PNG 压缩模块
          */
         init: async function () {
             try {
@@ -42,9 +42,9 @@
                 this.tinypngModule = TinyPNGService;
                 this.initialized = true;
                 this.tinypngReady = true;
-                console.log('[ImageCompression] TinyPNG 模块初始化成功');
+                console.log('[ImageCompression] PNG 压缩模块初始化成功');
             } catch (error) {
-                console.error('[ImageCompression] TinyPNG 模块加载失败:', error);
+                console.error('[ImageCompression] PNG 压缩模块加载失败:', error);
                 this.initialized = true;
                 this.tinypngReady = false;
                 console.log('[ImageCompression] 将使用无压缩模式');
@@ -52,7 +52,7 @@
         },
 
         /**
-         * 检查 TinyPNG 服务状态
+         * 检查 PNG 压缩服务状态
          */
         isTinyPNGReady: function () {
             return this.tinypngReady;
@@ -79,7 +79,7 @@
         },
 
         /**
-         * 使用 TinyPNG 压缩 PNG
+         * 使用 PNG 有损压缩
          * @param {Uint8Array} pngData - PNG 数据
          * @param {number} quality - 压缩质量（0-100）
          * @returns {Promise<Uint8Array>} - 压缩后的 PNG 数据
@@ -90,7 +90,7 @@
             }
 
             if (!this.isTinyPNGReady()) {
-                throw new Error('TinyPNG not available');
+                throw new Error('PNG compressor not available');
             }
 
             const startTime = performance.now();
@@ -105,14 +105,14 @@
                 const elapsed = (performance.now() - startTime).toFixed(1);
                 const ratio = (compressedData.length / originalSize * 100).toFixed(1);
 
-                console.log('[ImageCompression] TinyPNG 压缩成功: ' +
+                console.log('[ImageCompression] PNG 压缩成功: ' +
                     originalSize + ' → ' + compressedData.length + ' bytes (' +
                     ratio + '%), 耗时 ' + elapsed + 'ms');
 
                 return compressedData;
             } catch (error) {
                 const elapsed = (performance.now() - startTime).toFixed(1);
-                console.error('[ImageCompression] TinyPNG 压缩失败 (' + elapsed + 'ms):', error);
+                console.error('[ImageCompression] PNG 压缩失败 (' + elapsed + 'ms):', error);
                 throw error;
             }
         },
@@ -139,10 +139,10 @@
                     return compressedData;
                 } catch (error) {
                     this.compressionStats.tinypngFailed++;
-                    console.warn('[ImageCompression] TinyPNG 压缩失败，返回原始数据');
+                    console.warn('[ImageCompression] PNG 压缩失败，返回原始数据');
                 }
             } else {
-                console.warn('[ImageCompression] TinyPNG 不可用，跳过压缩');
+                console.warn('[ImageCompression] PNG 压缩不可用，跳过压缩');
             }
 
             this.compressionStats.compressedBytes += pngData.length;
@@ -229,8 +229,8 @@
             const stats = this.getStats();
             console.log('[ImageCompression] 压缩统计摘要:');
             console.log('  - 总处理图片: ' + stats.total);
-            console.log('  - TinyPNG 成功: ' + stats.tinypngSuccess);
-            console.log('  - TinyPNG 失败: ' + stats.tinypngFailed);
+            console.log('  - PNG 压缩成功: ' + stats.tinypngSuccess);
+            console.log('  - PNG 压缩失败: ' + stats.tinypngFailed);
             console.log('  - 原始大小: ' + (stats.originalBytes / 1024).toFixed(1) + ' KB');
             console.log('  - 压缩后大小: ' + (stats.compressedBytes / 1024).toFixed(1) + ' KB');
             if (stats.compressionRatio) {

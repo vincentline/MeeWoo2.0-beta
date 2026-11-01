@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=e66d43f1f885748a96c30911ce58fe5e8ed8c667
+commit=ac196c7c9dd79855978744bc63cf87fc78094341
 branch=main
-built_at=2026-10-28T03:54:28.272Z
-subject=chore(build): 更新 docs 构建产物（方角预览 / color-mix）
+built_at=2026-11-01T12:18:34.019Z
+subject=chore(build): 更新 docs 构建产物（v1.3.0.32，视频处理 Agent 接入）
