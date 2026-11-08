@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=8e9df94a2649d83220e209d0548681ad4d4459a9
+commit=2fa15cf6cce80ad2974a4871b6b77d86174bc33f
 branch=main
-built_at=2026-11-01T12:49:28.479Z
-subject=chore(build): 更新 docs 构建产物（v1.3.0.33，模型配置方案）
+built_at=2026-11-08T20:43:27.398Z
+subject=chore(build): 更新 docs 构建产物（v1.3.0.35）
