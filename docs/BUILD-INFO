@@ -1,5 +1,5 @@
 source=MeeWoo2.0
-commit=981c0b2f8ff04335b99950fc8796b05569c4daa3
+commit=057c6cae297436fb4f540f2743e947b9d51469e4
 branch=main
-built_at=2026-11-10T10:30:35.121Z
-subject=chore(build): 更新 docs 构建产物（v1.3.0.41）
+built_at=2026-11-10T10:38:08.186Z
+subject=fix(yyeva): strict key spec checks and v1.3.0.42 build
